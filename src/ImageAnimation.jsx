@@ -3,6 +3,8 @@ import gsap from "gsap";
 import { useRef } from "react";
 import { img1, img2, img3, img4, img5, img6 } from "./assets";
 
+import './index.css'
+
 gsap.registerPlugin(useGSAP);
 
 const ImageAnimation = () => {
@@ -26,11 +28,11 @@ const ImageAnimation = () => {
 
       const finalPositions = [
         { x: "-40%", y: "20%", rotation: 7 },
-        { x: "40%", y: "-45%", rotation: 7 },
-        { x: "-45%", y: "-35%", rotation: 7 },
-        { x: "20%", y: "25%", rotation: 7 },
-        { x: "45%", y: "-15%", rotation: 7 },
-        { x: "0%", y: "0%", rotation: 7 },
+        { x: "40%", y: "-45%", rotation: -12 },
+        { x: "-45%", y: "-35%", rotation: 10 },
+        { x: "20%", y: "25%", rotation: -15 },
+        { x: "45%", y: "-15%", rotation: -5 },
+        { x: "0%", y: "0%", rotation: 0 },
       ];
 
       images.forEach((img, index) => {
