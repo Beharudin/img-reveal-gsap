@@ -4,6 +4,10 @@ import { useRef } from "react";
 import { img1, img2, img3, img4, img5, img6 } from "./assets";
 
 import './index.css'
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+
+gsap.registerPlugin(ScrollTrigger);
 
 gsap.registerPlugin(useGSAP);
 
